@@ -1,26 +1,150 @@
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: black;
-    height: 100vh;
+body {
+    background:pink;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, sans-serif;
 }
-.container{
-    height: 600px;
+.game {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+.center {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 15px;
+}
+.container {
     width: 600px;
+    height: 600px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: aqua;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 5px solid black;
 }
-.white{
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    font-family: "Segoe UI Symbol",
+                 "Noto Sans Symbols 2",
+                 "Arial Unicode MS",
+                 sans-serif;
+}
+.White {
+    background-color: whitesmoke;
+}
+.Brown {
+    background-color:brown;
+}
+.selected {
+    outline: 5px solid yellow;
+}
+.possible {
+    box-shadow: inset 0 0 0 6px limegreen;
+}
+.side {
+    width: 210px;
+    min-height: 500px;
     background-color: white;
+    border: 4px solid black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
 }
-.brown{
-    background-color:  brown;
+.side h2 {
+    margin-bottom: 10px;
 }
+.team1 {
+    border-color: white;
+}
+
+.team2 {
+    border-color: black;
+}
+.captured {
+    margin-top: 25px;
+    min-height: 80px;
+}
+.captured h3 {
+    margin-bottom: 10px;
+}
+#whiteCaptured,
+#blackCaptured {
+    font-size: 28px;
+    word-wrap: break-word;
+}
+.turn {
+    background-color: white;
+    margin-top: 15px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#turn {
+    color: blueviolet;
+}
+.chat {
+    margin-top: 20px;
+    border-top: 2px solid #ddd;
+    padding-top: 15px;
+}
+.chat h3 {
+    margin-bottom: 10px;
+}
+.messages {
+    height: 120px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 7px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 13px;
+}
+.message {
+    background-color: #e5e5e5;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+.chat input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    outline: none;
+}
+.chat button {
+    width: 100%;
+    margin-top: 6px;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.chat button:hover {
+    background-color: purple;
+}
+
