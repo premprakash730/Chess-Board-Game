@@ -3,97 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylec3.css">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="style1.css"> 
 </head>
 <body>
-    <div class ="container">
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
-    <div class="brown"></div>
-    <div class="white"></div>
+<div class="game">
+    <div class="side team1">
+        <h2>♔ Team 1</h2>
+        <p>White Team</p>
 
-
-
-
-
-
+        <div class="captured">
+            <h3>Captured</h3>
+            <div id="whiteCaptured"></div>
+        </div>
     </div>
+
+    <div>
+        <h1>♟ CHESS GAME ♟</h1>
+
+        <div class="container" id="board"></div>
+
+        <div class="turn">
+            Turn: <span id="turn">Team 1</span>
+        </div>
+    </div>
+
+    <div class="side team2">
+        <h2>♚ Team 2</h2>
+        <p>Black Team</p>
+
+        <div class="captured">
+            <h3>Captured</h3>
+            <div id="blackCaptured"></div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
